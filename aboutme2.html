@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="aboutme2.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <div class="hero">
+        <h1>About Me</h1>
+        <div class="details-box">
+            <div id="slide">
+                <div class="card">
+                    <div class="profile">
+                        <img src="img_vid/profile.jpeg">
+                        <div>
+                            <h3>Manisha Poonia</h3>
+                            <p>UI/UX Designer,Front-end Developer</p>
+                        </div>
+
+                    </div>
+                    <p>I am 1st year Computer Science Engineering student in Bangalore, Karnataka. I learned UI/UX designing with frontend development. I also made two projects for android app and wish to be a free lancer in next two-three months.
+
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="profile">
+                        <img src="img_vid/profile.jpeg">
+                        <div>
+                            <h3>Educational Qualifications</h3>
+                            <p></p>
+                        </div>
+
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, odio, necessitatibus dicta harum, ducimus illum officiis voluptatum provident totam minima quisquam nam modi facere ullam vel delectus sit dolorum earum?</p>
+                </div>
+                <div class="card">
+                    <div class="profile">
+                        <img src="img_vid/profile.jpeg">
+                        <div>
+                            <h3> Achievements </h3>
+                            <p></p>
+                        </div>
+
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, odio, necessitatibus dicta harum, ducimus illum officiis voluptatum provident totam minima quisquam nam modi facere ullam vel delectus sit dolorum earum?</p>
+                </div>
+                <div class="card">
+                    <div class="profile">
+                        <img src="img_vid/profile.jpeg">
+                        <div>
+                            <h3>Courses</h3>
+                            <p></p>
+                        </div>
+
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, odio, necessitatibus dicta harum, ducimus illum officiis voluptatum provident totam minima quisquam nam modi facere ullam vel delectus sit dolorum earum?</p>
+                </div>
+            </div>
+            <div class="sidebar">
+                <img src="" alt="" id="upArrow">
+                <img src="" id="downArrow">
+                <!-- <i class="fas fa-arrow-circle-up"></i>
+                <i class="fas fa-arrow-circle-down"></i> -->
+
+            </div>
+
+        </div>
+    </div>
+    <script>
+        var slide = document.getElementById("slide");
+        var upArrow = document.getElementById("upArrow");
+        var downArrow = document.getElementById("downArrow");
+        let x = 0;
+        upArrow.onclick = function() {
+            if (x > "-900") {
+                x = x - 300;
+                slide.style.top = x + "px";
+
+            }
+
+
+        }
+        downArrow.onclick = function() {
+            if (x < "0") {
+                x = x + 300;
+                slide.style.top = x + "px";
+
+            }
+
+
+        }
+    </script>
+
+</body>
+
+</html>

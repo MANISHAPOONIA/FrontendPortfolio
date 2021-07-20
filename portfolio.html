@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio.</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "200px";
+            document.getElementById("mySidenav").style.display = "block";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <video autoplay loop class="back-video" muted plays-inline>
+            <source src="img_vid/161205_12_FiberOptics12.mp4" type="video/mp4">
+        </video>
+        <div class="navbar">
+            <img src="img_vid/PORTFOLIO_LOGO-removebg-preview.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="portfolio.html">Home</a></li>
+                    <li><a href="aboutme2.html">About</a></li>
+                    <li><a href="login.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- <img src="img_vid/menu_black_24dp.svg" class="menu-icon"> -->
+            <div id="mySidenav" class="sidenav">
+
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="aboutme2.html">About</a>
+                <a href="myworks2.html">Services</a>
+                <a href="">Clients</a>
+                <a href="login.html">Contact</a>
+
+            </div>
+
+            <!-- Use any element to open the sidenav -->
+            <span onclick="openNav()"> <img src="img_vid/menu_black_24dp.svg" class="menu-icon"></span>
+
+            <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>Manisha Poonia</h1>
+                <p>UI/UX designer</p>
+                <button type="button" id="redirect">Hire Me</button>
+            </div>
+            <div class="col">
+                <div class="card card1">
+                    <h5>About Me</h5>
+                    <p></p>
+                </div>
+                <div class="card card2">
+                    <h5>My Designs</h5>
+                    <p></p>
+                </div>
+                <div class="card card3">
+                    <h5>Android projects</h5>
+                    <p></p>
+                </div>
+                <div class="card card4">
+                    <h5>Other Projects</h5>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector("#redirect ")
+            .addEventListener('click', () => {
+                window.location.href = "login.html";
+            });
+    </script>
+    <script>
+        document.querySelector(".card1 ")
+            .addEventListener('click', () => {
+                window.location.href = "aboutme2.html";
+            });
+    </script>
+    <script>
+        document.querySelector(".card2 ")
+            .addEventListener('click', () => {
+                window.location.href = "myworks2.html";
+            });
+    </script>
+    <script>
+        document.querySelector(".card3")
+            .addEventListener('click', () => {
+                window.location.href = "myworks2.html";
+            });
+    </script>
+    <script>
+        document.querySelector(".card4 ")
+            .addEventListener('click', () => {
+                window.location.href = "mywork2.html";
+            });
+    </script>
+
+</body>
+
+</html>

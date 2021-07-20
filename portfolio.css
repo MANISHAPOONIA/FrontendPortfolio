@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img_vid/WhatsApp\ Image\ 2021-07-02\ at\ 8.34.21\ AM.jpeg); */
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+}
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+    fill: #fff;
+    filter: invert(100%) sepia(0%) saturate(7443%) hue-rotate(198deg) brightness(126%) contrast(112%);
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+nav ul li a:hover {
+    color: rgb(219, 28, 117);
+    font-size: 15px;
+    font-weight: bold;
+    /* height: 3px;
+    background: linear-gradient(to right, #f44336, #9f4db5);
+    width: 100px; */
+    text-decoration: underline linear-gradient(to right, #f44336, #9f4db5) solid 3px;
+}
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+h1 {
+    color: white;
+    font-size: 80px;
+}
+
+p {
+    color: white;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+button {
+    width: 180px;
+    color: rgb(27, 48, 235);
+    font-size: 18px;
+    padding: 12px 0;
+    background: white;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+button:hover {
+    color: aqua;
+    box-shadow: beige;
+    font-size: 20px;
+}
+
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card1 {
+    background-image: url(img_vid/profile.jpeg);
+}
+
+.card2 {
+    background-image: url(img_vid/ui-ux.jpg);
+}
+
+.card3 {
+    background-image: url(img_vid/android\ projects.webp);
+}
+
+.card4 {
+    background-image: url(img_vid/other\ works.jpg);
+}
+
+.card:hover {
+    transform: translateY(-15px);
+}
+
+h5 {
+    color: rgb(252, 252, 252);
+    text-shadow: 0 0 5px #999;
+}
+
+.card p {
+    text-shadow: 0 0 5px #000;
+    font-size: 8px;
+}
+
+
+/* The side navigation menu */
+
+.sidenav {
+    display: none;
+    height: 40%;
+    width: 0;
+    position: fixed;
+    border-radius: 20px;
+    border: white 3px solid;
+    box-shadow: 150px rgba(184, 15, 15, 0.877);
+    justify-content: center;
+    border-spacing: 25px;
+    z-index: 1;
+    top: 40px;
+    right: 100px;
+    background-color: #4d4141;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: ease-in-out 0.5s;
+    text-align: center;
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #4b4deb;
+    display: flex;
+    transition: 0.3s;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    shape-rendering: crispEdges;
+    color: yellow;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+#main {
+    transition: margin-bottom .5s;
+    padding: 20px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,276 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.mainDiv {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: #f6fbff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar {
+    display: flex;
+    width: 25%;
+    height: 90vh;
+    /* justify-content: start; */
+    flex-direction: column;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    padding-left: 0;
+    position: absolute;
+    left: 70px;
+    border: 3px solid rgb(172, 182, 172)
+}
+
+.contentProfile {
+    height: 20%;
+    width: 100%;
+    border-bottom: 3px rgb(82, 0, 158, 0.692) solid;
+    line-height: 22px;
+    display: inline-flex;
+    box-sizing: border-box;
+    background: white;
+    position: absolute;
+    z-index: 1;
+}
+
+.sidebar .profile .contentProfile img {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 50%;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.sidebar .profile .contentProfile h3 {
+    margin-left: 20px;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 200 bold;
+    font-display: vertical;
+}
+
+.sidebar .profile .contentProfile h4 {
+    margin-left: 20px;
+    padding-top: 0px;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 100;
+    /* text-align: center vertical; */
+    font-display: vertical;
+}
+
+.sidebar .profile .connect {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    margin-top: 35%;
+    padding-top: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+    position: absolute;
+    border-bottom: 3px rgba(82, 0, 158, 0.692) solid;
+    z-index: 100;
+}
+
+.sidebar .profile .connect h3 {
+    margin-left: 20px;
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 100 bold;
+    font-display: vertical;
+}
+
+.sidebar .profile .connect i {
+    margin-right: 20px;
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 100 bold;
+    /* filter: invert(100%) sepia(0%) saturate(7443%) hue-rotate(198deg) brightness(126%) contrast(112%); */
+    font-display: vertical;
+}
+
+
+/* .sidebar .profile .linkedin {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    margin-top: 50%;
+    padding-top: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+    position: absolute;
+    border-bottom: 3px rgba(82, 0, 158, 0.692) solid;
+    z-index: 100;
+}
+
+.sidebar .profile .linkedin a {
+    margin-left: 20px;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 100 bold;
+    font-display: vertical;
+}
+
+.sidebar .profile .gitHub {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    margin-top: 65%;
+    padding-top: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+    position: absolute;
+    border-bottom: 3px rgba(82, 0, 158, 0.692) solid;
+    z-index: 100;
+}
+
+.sidebar .profile .gitHub a {
+    margin-left: 20px;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 100 bold;
+    font-display: vertical;
+}
+
+.sidebar .profile .youtube {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    margin-top: 80%;
+    padding-top: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+    position: absolute;
+    border-bottom: 3px rgba(82, 0, 158, 0.692) solid;
+    z-index: 100;
+}
+
+.sidebar .profile .youtube a {
+    margin-left: 20px;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 100 bold;
+    font-display: vertical;
+}
+
+.sidebar .profile .behance {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    margin-top: 95%;
+    padding-top: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+    position: absolute;
+    border-bottom: 3px rgba(82, 0, 158, 0.692) solid;
+    z-index: 100;
+}
+
+.sidebar .profile .behance a {
+    margin-left: 20px;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 100 bold;
+    font-display: vertical;
+}
+
+.sidebar .profile .mail {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    margin-top: 110%;
+    padding-top: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+    position: absolute;
+    border-bottom: 3px rgba(82, 0, 158, 0.692) solid;
+    z-index: 100;
+}
+
+.sidebar .profile .mail a {
+    margin-left: 20px;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 100 bold;
+    font-display: vertical;
+}
+
+.sidebar .profile .phone {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    margin-top: 125%;
+    padding-top: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+    position: absolute;
+    border-bottom: 3px rgba(82, 0, 158, 0.692) solid;
+    z-index: 100;
+}
+
+.sidebar .profile .phone a {
+    margin-left: 20px;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 100 bold;
+    font-display: vertical;
+} */
+
+.fa-chevron-circle-down {
+    /* background-color: #7e32d4; */
+    /* color: white; */
+    /* padding: 16px; */
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    background-color: #017575;
+    min-width: 100%;
+    top: 70%;
+    z-index: 1;
+}
+
+.links {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+
+.links:hover {
+    background-color: rgba(82, 0, 158, 0.692);
+}
+
+.dropdown:hover .fa-chevron-circle-down {
+    background-color: #9886dae7;
+}

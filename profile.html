@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <div class="mainDiv">
+        <div class="sidebar">
+            <div class="profile">
+                <div class="contentProfile">
+                    <img src="img_vid/ui-ux.jpg" alt="">
+                    <div>
+                        <h3>Manisha Poonia</h3>
+                        <h4>UI/UX designer , Frontend Developer</h4>
+                    </div>
+                </div>
+                <div class="connect">
+                    <h3>Connect With Me</h3>
+                    <div class="dropdown"></div>
+                    <i class="fas fa-chevron-circle-down"></i>
+                    <div class="menu">
+
+                        <!-- <div class="linkedin"> -->
+                        <a href="#" class="links">LinkedIn</a>
+                        <!-- </div>
+                        <div class="gitHub"> -->
+                        <a href="#" class="links">GitHub</a>
+                        <!-- </div>
+                        <div class="youtube"> -->
+                        <a href="#" class="links">Youtube</a>
+                        <!-- </div>
+                        <div class="behance"> -->
+                        <a href="#" class="links">Behance</a>
+                        <!-- </div>
+                        <div class="mail"> -->
+                        <a href="#" class="links">Mail</a>
+                        <!-- </div> -->
+                        <!-- <div class="Phone"> -->
+                        <a href="#" class="links">Phone</a>
+                        <!-- </div> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        let dropdownBtn = document.querySelector('.fa-chevron-circle-down');
+        let menuContent = document.querySelector('.menu');
+        let clickbtn = document.querySelector('.sidebar')
+        dropdownBtn.addEventListener('click', () => {
+            if (menuContent.style.display == "") {
+                menuContent.style.display = "block";
+            } else {
+                menuContent.style.display = "";
+            }
+
+        });
+        //     else if (!clickbtn.addEventListener('click', () => {
+        //             if (menuContent.style.display =="") {
+        //                 menuContent.style.display = "";
+        //             } else {
+
+        //                 menuContent.style.display = "block";
+        //             }
+
+        //         }));
+        //
+    </script>
+</body>
+
+</html>
